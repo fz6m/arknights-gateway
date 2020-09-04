@@ -6,13 +6,12 @@ import Loading from "./components/Loading";
 import RotateScreen from "./components/RotateScreen";
 import { setResize } from "./utils/index";
 import { useEffectOnce } from "react-use";
-import { createBrowserHistory } from 'history'
 // import { loadingTest } from "./utils/loading";
 
 const routes = (route) => {
   return [
     {
-      path: process.env.REACT_APP_URL,
+      path: process.env.NODE_ENV === 'development' ? '/' : process.env.REACT_APP_URL,
       exact: true,
       element: lazy(() =>
         import(/* webpackChunkName: "home" */ "./pages/Home")
@@ -30,10 +29,6 @@ const routes = (route) => {
   ];
 };
 
-const history = createBrowserHistory({
-  basename: process.env.REACT_APP_URL
-})
-
 const App = (props) => {
   const $tip = useRef(null);
 
@@ -49,7 +44,7 @@ const App = (props) => {
   });
 
   return (
-    <Router history={history}>
+    <Router>
       <RotateScreen ref={$tip} />
       <Switch>
         {routes(props.router).map((route) => {
