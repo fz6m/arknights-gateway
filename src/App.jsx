@@ -11,7 +11,7 @@ import { useEffectOnce } from "react-use";
 const routes = (route) => {
   return [
     {
-      path: process.env.NODE_ENV === 'development' ? '/' : process.env.REACT_APP_URL,
+      path: process.env.NODE_ENV === 'development' ? '/' : process.env.PUBLIC_URL,
       exact: true,
       element: lazy(() =>
         import(/* webpackChunkName: "home" */ "./pages/Home")
