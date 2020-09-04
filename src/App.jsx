@@ -31,7 +31,7 @@ const routes = (route) => {
 };
 
 const history = createBrowserHistory({
-  basename: process.env.PUBLIC_URL
+  basename: process.env.REACT_APP_URL
 })
 
 const App = (props) => {
