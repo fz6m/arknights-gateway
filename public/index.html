@@ -20,12 +20,12 @@
     <script>
       if (
         window.location.pathname !=
-        "<%= process.env.PUBLIC_URL %>" + "/404"
+        "<%= process.env.REACT_APP_URL %>" + "/404"
       ) {
         var element = new Image();
         Object.defineProperty(element, "id", {
           get: function () {
-            window.location.href = "<%= process.env.PUBLIC_URL %>" + "/404";
+            window.location.href = "<%= process.env.REACT_APP_URL %>" + "/404";
           },
         });
         console.log(element);
