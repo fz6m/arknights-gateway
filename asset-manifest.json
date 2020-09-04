@@ -1,25 +1,25 @@
 {
   "files": {
-    "chunk-libs.css": "/static/css/chunk-libs.24bf1742.css",
-    "chunk-libs.js": "/static/js/chunk-libs.a5876558.js",
-    "error.css": "/static/css/error.bb40dc85.css",
-    "error.js": "/static/js/error.5db0e0d6.js",
-    "home.css": "/static/css/home.3987c252.css",
-    "home.js": "/static/js/home.5cc7e36a.js",
-    "main.css": "/static/css/main.cf707296.css",
-    "main.js": "/static/js/main.b0274080.js",
-    "runtime.js": "/static/js/runtime.d0f4601f.js",
-    "vendors~home.js": "/static/js/vendors~home.adf5e520.js",
-    "index.html": "/index.html",
-    "precache-manifest.8ad50ff9b7ef9e8fdca36d28ce1cb14b.js": "/precache-manifest.8ad50ff9b7ef9e8fdca36d28ce1cb14b.js",
-    "service-worker.js": "/service-worker.js",
-    "static/media/index.less": "/static/media/iconfont.af8431db.eot"
+    "chunk-libs.css": "/arknights-gateway/static/css/chunk-libs.24bf1742.css",
+    "chunk-libs.js": "/arknights-gateway/static/js/chunk-libs.a5876558.js",
+    "error.css": "/arknights-gateway/static/css/error.bb40dc85.css",
+    "error.js": "/arknights-gateway/static/js/error.5db0e0d6.js",
+    "home.css": "/arknights-gateway/static/css/home.3987c252.css",
+    "home.js": "/arknights-gateway/static/js/home.5cc7e36a.js",
+    "main.css": "/arknights-gateway/static/css/main.ff79b933.css",
+    "main.js": "/arknights-gateway/static/js/main.866bd2a0.js",
+    "runtime.js": "/arknights-gateway/static/js/runtime.3e345012.js",
+    "vendors~home.js": "/arknights-gateway/static/js/vendors~home.adf5e520.js",
+    "index.html": "/arknights-gateway/index.html",
+    "precache-manifest.9cc31c7ceb0b85e1a1b497a096c728b2.js": "/arknights-gateway/precache-manifest.9cc31c7ceb0b85e1a1b497a096c728b2.js",
+    "service-worker.js": "/arknights-gateway/service-worker.js",
+    "static/media/index.less": "/arknights-gateway/static/media/iconfont.af8431db.eot"
   },
   "entrypoints": [
-    "static/js/runtime.d0f4601f.js",
+    "static/js/runtime.3e345012.js",
     "static/css/chunk-libs.24bf1742.css",
     "static/js/chunk-libs.a5876558.js",
-    "static/css/main.cf707296.css",
-    "static/js/main.b0274080.js"
+    "static/css/main.ff79b933.css",
+    "static/js/main.866bd2a0.js"
   ]
 }
