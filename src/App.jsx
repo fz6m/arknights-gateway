@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useRef, createHistory } from "react";
+import React, { lazy, Suspense, useRef } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import DocumentTitle from "react-document-title";
 import { connect } from "react-redux";
@@ -6,6 +6,7 @@ import Loading from "./components/Loading";
 import RotateScreen from "./components/RotateScreen";
 import { setResize } from "./utils/index";
 import { useEffectOnce } from "react-use";
+import { createBrowserHistory } from 'history'
 // import { loadingTest } from "./utils/loading";
 
 const routes = (route) => {
@@ -29,7 +30,7 @@ const routes = (route) => {
   ];
 };
 
-const history = createHistory({
+const history = createBrowserHistory({
   basename: process.env.PUBLIC_URL
 })
 
