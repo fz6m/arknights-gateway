@@ -20,7 +20,7 @@ const routes = (route) => {
       title: route.home,
     },
     {
-      path: "/",
+      path: "*",
       exact: false,
       element: lazy(() =>
         import(/* webpackChunkName: "error" */ "./pages/Error")
