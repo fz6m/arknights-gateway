@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useRef } from "react";
+import React, { lazy, Suspense, useRef, createHistory } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import DocumentTitle from "react-document-title";
 import { connect } from "react-redux";
@@ -29,6 +29,10 @@ const routes = (route) => {
   ];
 };
 
+const history = createHistory({
+  basename: process.env.PUBLIC_URL
+})
+
 const App = (props) => {
   const $tip = useRef(null);
 
@@ -44,7 +48,7 @@ const App = (props) => {
   });
 
   return (
-    <Router>
+    <Router history={history}>
       <RotateScreen ref={$tip} />
       <Switch>
         {routes(props.router).map((route) => {
