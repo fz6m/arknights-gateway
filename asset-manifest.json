@@ -7,11 +7,11 @@
     "home.css": "/arknights-gateway/static/css/home.3987c252.css",
     "home.js": "/arknights-gateway/static/js/home.5cc7e36a.js",
     "main.css": "/arknights-gateway/static/css/main.ff79b933.css",
-    "main.js": "/arknights-gateway/static/js/main.b577573f.js",
+    "main.js": "/arknights-gateway/static/js/main.422600f5.js",
     "runtime.js": "/arknights-gateway/static/js/runtime.3e345012.js",
     "vendors~home.js": "/arknights-gateway/static/js/vendors~home.adf5e520.js",
     "index.html": "/arknights-gateway/index.html",
-    "precache-manifest.1ea32eeccc60fdf5ff14396f54fb3273.js": "/arknights-gateway/precache-manifest.1ea32eeccc60fdf5ff14396f54fb3273.js",
+    "precache-manifest.b7b8a256f95cf6d50820c4473cea80ec.js": "/arknights-gateway/precache-manifest.b7b8a256f95cf6d50820c4473cea80ec.js",
     "service-worker.js": "/arknights-gateway/service-worker.js",
     "static/media/index.less": "/arknights-gateway/static/media/iconfont.af8431db.eot"
   },
@@ -20,6 +20,6 @@
     "static/css/chunk-libs.24bf1742.css",
     "static/js/chunk-libs.a5876558.js",
     "static/css/main.ff79b933.css",
-    "static/js/main.b577573f.js"
+    "static/js/main.422600f5.js"
   ]
 }
