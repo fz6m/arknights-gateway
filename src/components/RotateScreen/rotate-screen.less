@@ -1,0 +1,56 @@
+.media-tip {
+    color: #fff;
+    background-color: @black;
+    z-index: 100;
+    position: fixed;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    .flex();
+
+    &-content {
+        transform: rotate(90deg);
+        flex-direction: row;
+        .flex();
+    }
+
+    &-text {
+        margin-left: 1.25rem;
+        letter-spacing: 0.25rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+}
+
+
+.icon-phone {
+    width: 2.8125rem;
+    animation: spin 3s infinite;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+// 竖屏
+@media all and (orientation : portrait) {
+
+    .media-tip {
+        visibility: visible;
+    }
+
+}

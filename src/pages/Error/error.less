@@ -1,0 +1,54 @@
+.error {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        width: 0px;
+    }
+
+    .info {
+        vertical-align: middle;
+        display: inline-block;
+        width: 100%;
+    }
+
+}
+
+.image {
+    width: 100%;
+    height: 300px;
+    background: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@2.0.0/image/error/image-404.png) no-repeat center center;
+    background-size: contain;
+    position: relative;
+    top: -1.5em;
+}
+
+@font-face {
+    font-family: 'zhanku';
+    src: url(https://cdn.jsdelivr.net/gh/fz6m/Private-web@2.0.0/font/zhanku/zhanku.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.about {
+    cursor: default;
+
+    span {
+        padding: 10px 30px;
+        background: #ee9ca7;
+        color: #fff;
+        font-family: 'zhanku';
+        font-size: .9em;
+        border-radius: 50px;
+    }
+}

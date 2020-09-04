@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="这里是桃饱门户，ここは桃飽ゲートウェイだよ"
+    />
+    <meta name="author" content="fz6m" />
+    <meta name="keyword" content="桃饱,门户,桃饱の店,桃饱の门户,明日方舟" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <% if (process.env.NODE_ENV == 'production') { %>
+    <script>
+      if (
+        window.location.pathname !=
+        "<%= process.env.PUBLIC_URL %>" + "/404"
+      ) {
+        var element = new Image();
+        Object.defineProperty(element, "id", {
+          get: function () {
+            window.location.href = "<%= process.env.PUBLIC_URL %>" + "/404";
+          },
+        });
+        console.log(element);
+      }
+    </script>
+    <% } %>
+
+    <!--[if lt IE 9]>
+      <script src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+
+  </head>
+  <body>
+    <noscript>
+      <strong>
+        We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to continue.
+      </strong>
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
