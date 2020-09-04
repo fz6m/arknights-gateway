@@ -12,7 +12,7 @@ import { createBrowserHistory } from 'history'
 const routes = (route) => {
   return [
     {
-      path: "/",
+      path: process.env.REACT_APP_URL + "/",
       exact: true,
       element: lazy(() =>
         import(/* webpackChunkName: "home" */ "./pages/Home")
