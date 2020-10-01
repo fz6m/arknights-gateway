@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "256235177bf08f540f59718bfe330385",
+    "revision": "0f43eb381614b31804cb45191b539648",
     "url": "/arknights-gateway/index.html"
   },
   {
-    "revision": "5e0af3dd300b29380a47",
+    "revision": "6b919199d04f73b93bd0",
     "url": "/arknights-gateway/static/css/chunk-libs.24bf1742.css"
   },
   {
@@ -16,12 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/arknights-gateway/static/css/home.3987c252.css"
   },
   {
-    "revision": "34801b8207e09d8263b1",
+    "revision": "4d3990271113db07a7d1",
     "url": "/arknights-gateway/static/css/main.ff79b933.css"
   },
   {
-    "revision": "5e0af3dd300b29380a47",
-    "url": "/arknights-gateway/static/js/chunk-libs.2f3fffeb.js"
+    "revision": "6b919199d04f73b93bd0",
+    "url": "/arknights-gateway/static/js/chunk-libs.a5876558.js"
   },
   {
     "revision": "edea32d24ca4252e7076",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/arknights-gateway/static/js/home.5cc7e36a.js"
   },
   {
-    "revision": "34801b8207e09d8263b1",
-    "url": "/arknights-gateway/static/js/main.da084845.js"
+    "revision": "4d3990271113db07a7d1",
+    "url": "/arknights-gateway/static/js/main.12fdc8df.js"
   },
   {
     "revision": "ea46cda47de679491a78",
