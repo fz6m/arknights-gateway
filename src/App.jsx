@@ -8,8 +8,8 @@ import { setResize } from "./utils/index";
 import { useEffectOnce } from "react-use";
 // import { loadingTest } from "./utils/loading";
 
-const basePath = (path = '') => {
-  return process.env.NODE_ENV === 'development' ? '/' + path : process.env.PUBLIC_URL + path
+const basePath = (path) => {
+  return process.env.NODE_ENV === 'development' ? path : process.env.PUBLIC_URL + path
 }
 
 const routes = (route) => {
