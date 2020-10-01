@@ -12,7 +12,6 @@ const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
 
 const title = 'Arknights-gateway'
 
-
 /**
  * @param target: 要遍历的对象
  * @param name: 插件名

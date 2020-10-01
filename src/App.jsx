@@ -8,10 +8,14 @@ import { setResize } from "./utils/index";
 import { useEffectOnce } from "react-use";
 // import { loadingTest } from "./utils/loading";
 
+const basePath = (path = '') => {
+  return process.env.NODE_ENV === 'development' ? '/' + path : process.env.PUBLIC_URL + path
+}
+
 const routes = (route) => {
   return [
     {
-      path: process.env.NODE_ENV === 'development' ? '/' : process.env.PUBLIC_URL,
+      path: basePath('/'),
       exact: true,
       element: lazy(() =>
         import(/* webpackChunkName: "home" */ "./pages/Home")
@@ -19,7 +23,7 @@ const routes = (route) => {
       title: route.home,
     },
     {
-      path: "*",
+      path: '*',
       exact: false,
       element: lazy(() =>
         import(/* webpackChunkName: "error" */ "./pages/Error")
