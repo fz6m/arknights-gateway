@@ -8,14 +8,11 @@ import { setResize } from "./utils/index";
 import { useEffectOnce } from "react-use";
 // import { loadingTest } from "./utils/loading";
 
-const basePath = (path) => {
-  return process.env.NODE_ENV === 'development' ? path : process.env.PUBLIC_URL + path
-}
 
 const routes = (route) => {
   return [
     {
-      path: basePath('/'),
+      path: '/',
       exact: true,
       element: lazy(() =>
         import(/* webpackChunkName: "home" */ "./pages/Home")
@@ -48,7 +45,7 @@ const App = (props) => {
   });
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL ? process.env.PUBLIC_URL : '/'}>
       <RotateScreen ref={$tip} />
       <Switch>
         {routes(props.router).map((route) => {
